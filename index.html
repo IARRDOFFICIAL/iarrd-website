@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IARRD Official Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin-left: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-right: 1em;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #4ca1af;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            background: url('https://source.unsplash.com/1600x900/?space') no-repeat center center/cover;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        .content-section {
+            padding: 4em 2em;
+            background: white;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #333;
+        }
+
+        .content-section p {
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+        }
+
+        .projects, .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project, .member {
+            background: #f4f4f4;
+            margin: 1em;
+            padding: 1.5em;
+            border-radius: 8px;
+            width: calc(33% - 2em);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover, .member:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-form {
+            background: #333;
+            color: white;
+            padding: 2em;
+            border-radius: 8px;
+            width: 50%;
+            margin: 2em auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1em;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .contact-form input[type="submit"] {
+            background: #4ca1af;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background: #2c3e50;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>IARRD</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div>
+            <h2>Welcome to IARRD</h2>
+            <p>Innovating Space Technology for a Better Tomorrow</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <h2>About Us</h2>
+        <p>We are dedicated to advancing space exploration and technology through innovative research and development.</p>
+    </section>
+    <section class="content-section">
+        <h2>Our Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Details about Project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Details about Project 2.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Details about Project 3.</p>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <div class="member">
+                <h3>Member 1</h3>
+                <p>Role and brief bio of Member 1.</p>
+            </div>
+            <div class="member">
+                <h3>Member 2</h3>
+                <p>Role and brief bio of Member 2.</p>
+            </div>
+            <div class="member">
+                <h3>Member 3</h3>
+                <p>Role and brief bio of Member 3.</p>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="/submit" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 IARRD. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
